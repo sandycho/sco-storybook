@@ -1,0 +1,38 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "hello-express",
+  "version": "0.0.1",
+  "description": "A simple Node app built on Express, instantly up and running.",
+  "main": "server.js",
+  "scripts": {
+    "start-node": "npx http-server public/storybook-build",
+    "start": "node server.js",
+    "start-storybook": "start-storybook",
+    "build": "npx build-storybook -c .storybook -o public/storybook-build"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "storybook": "^5.3.19"
+  },
+  "devDependencies": {
+    "@storybook/html": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "@babel/core": "^7.10.2",
+    "http-server": "0.12.3",
+    "@storybook/cli": "^5.3.19"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
