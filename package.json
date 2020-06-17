@@ -8,9 +8,9 @@
   "main": "server.js",
   "scripts": {
     "start-node": "npx http-server public/storybook-build",
-    "start-b": "npm run build-storybook && node server.js",
+    "start": "node server.js",
     "start-storybook": "start-storybook",
-    "start": "npx build-storybook -c .storybook -o public/storybook-build"
+    "build": "npx build-storybook -c .storybook -o public/storybook-build"
   },
   "dependencies": {
     "express": "^4.17.1",
